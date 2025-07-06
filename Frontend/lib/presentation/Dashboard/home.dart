@@ -5,8 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:sliding_sheet2/sliding_sheet2.dart';
-import 'slidingsheet.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
+
+import '../widget/slidingsheet.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -82,7 +83,7 @@ class _HomeState extends State<Home> {
 
   void makeCall() async {
     try {
-      bool? res = await FlutterPhoneDirectCaller.callNumber('+919111607983');
+       await FlutterPhoneDirectCaller.callNumber('+919111607983');
     } catch (error) {
       print(error);
     }

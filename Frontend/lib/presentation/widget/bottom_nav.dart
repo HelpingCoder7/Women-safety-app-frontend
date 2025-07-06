@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:women_safety_app/Screens/homeScreen.dart';
-// ignore: unused_import
-import 'package:women_safety_app/Screens/loginScreen.dart';
-// ignore: unused_import
-import 'package:women_safety_app/Screens/regristrationScreen.dart';
+
+import '../Dashboard/home.dart';
 
 class BottomNavigation extends StatefulWidget {
   const BottomNavigation({super.key});

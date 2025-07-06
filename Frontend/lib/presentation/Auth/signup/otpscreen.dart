@@ -2,8 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
 import 'package:http/http.dart' as http;
-import 'package:women_safety_app/Screens/homeScreen.dart';
-import 'askdetails.dart';
+
+import '../../Dashboard/home.dart';
+
+
 
 
 class otpScreen extends StatefulWidget {
@@ -70,8 +72,8 @@ class _otpScreenState extends State<otpScreen> {
             const SizedBox(height: 30,),
             Center(
               child: GestureDetector(
-                onTap: ()=>{Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const Askdetails()))
-              },
+              //   onTap: ()=>{Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const Askdetails()))
+              // },
                 child: Container(
                   height: height*0.07,
                   width: width*0.5,
